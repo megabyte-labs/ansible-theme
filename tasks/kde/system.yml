@@ -1,0 +1,12 @@
+---
+- name: Ensure system KDE package dependencies are installed
+  ansible.builtin.package:
+    name: '{{ kde_system_packages }}'
+    state: latest
+
+- name: Ensure Kvantum has environment variable set
+  become: true
+  lineinfile:
+    path: /etc/environment
+    regex: 'QT_STYLE_OVERRIDE'
+    line: 'export QT_STYLE_OVERRIDE=kvantum'

@@ -1,0 +1,47 @@
+---
+- name: Ensure ~/.config/user-kde-settings is a folder
+  file:
+    path: ~/.config/user-kde-settings
+    state: directory
+    recurse: true
+
+- name: Ensure user theme backup gets applied
+  copy:
+    src: files/user-kde-settings.tar.gz
+    dest: ~/.config/user-kde-settings.tar.gz
+  register: user_kde_copy
+  args:
+    creates: ~/.config/user-kde-settings.tar.gz
+
+- name: Decompress the user-kde-settings.tar.gz file
+  ansible.builtin.unarchive:
+    src: ~/.config/user-kde-settings.tar.gz
+    dest: ~/.config/user-kde-settings
+  when: user_kde_copy.changed
+
+- name: Ensure ~/.config/plasma is a folder
+  file:
+    path: ~/.local/plasma
+    state: directory
+    recurse: true
+  when: user_kde_copy.changed
+
+- name: Move user theme plasma/plasmoids folder
+  copy:
+    src: ~/.config/user-kde-settings/plasma/
+    dest: ~/.local/plasma/
+    remote_src: true
+  when: user_kde_copy.changed
+
+- name: Remove user-kde-settings plasma folder
+  file:
+    path: ~/.config/user-kde-settings/plasma
+    state: absent
+  when: user_kde_copy.changed
+
+- name: Copy over other files in the user-kde-settings to ~/.config
+  copy:
+    src: ~/.config/user-kde-settings/
+    dest: ~/.config/
+    remote_src: true
+  when: user_kde_copy.changed
