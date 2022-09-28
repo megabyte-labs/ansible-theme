@@ -1162,6 +1162,36 @@ prettier-plugin-toml-fixed@^0.3.3:
     "@toml-tools/parser" "^0.3.1"
     prettier "^1.16.0"
 
+prettier@2.3.1:
+  version "2.5.1"
+  resolved "2.5.1"
+  integrity sha512-vBZcPRUR5MZJwoyi3ZoyQlc1rXeEck8KgeC9AwwOn+exuxLxq5toTRDTSaVrXHxelDMHy9zlicw8u66yxoSUFg==
+
+prettier@>=2.0:
+  version "2.5.1"
+  resolved "2.5.1"
+  integrity sha512-vBZcPRUR5MZJwoyi3ZoyQlc1rXeEck8KgeC9AwwOn+exuxLxq5toTRDTSaVrXHxelDMHy9zlicw8u66yxoSUFg==
+
+prettier@>=2.3:
+  version "2.5.1"
+  resolved "2.5.1"
+  integrity sha512-vBZcPRUR5MZJwoyi3ZoyQlc1rXeEck8KgeC9AwwOn+exuxLxq5toTRDTSaVrXHxelDMHy9zlicw8u66yxoSUFg==
+
+prettier@>=2.3.0:
+  version "2.5.1"
+  resolved "2.5.1"
+  integrity sha512-vBZcPRUR5MZJwoyi3ZoyQlc1rXeEck8KgeC9AwwOn+exuxLxq5toTRDTSaVrXHxelDMHy9zlicw8u66yxoSUFg==
+
+prettier@^1.16.0:
+  version "2.5.1"
+  resolved "2.5.1"
+  integrity sha512-vBZcPRUR5MZJwoyi3ZoyQlc1rXeEck8KgeC9AwwOn+exuxLxq5toTRDTSaVrXHxelDMHy9zlicw8u66yxoSUFg==
+
+prettier@^2.4.1:
+  version "2.5.1"
+  resolved "2.5.1"
+  integrity sha512-vBZcPRUR5MZJwoyi3ZoyQlc1rXeEck8KgeC9AwwOn+exuxLxq5toTRDTSaVrXHxelDMHy9zlicw8u66yxoSUFg==
+
 semantic-release-config@latest:
   version "2.3.12"
   resolved "2.3.12"

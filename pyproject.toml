@@ -43,7 +43,7 @@ classifiers = [
   "Topic :: System :: Installation/Setup",
   "Topic :: Utilities"
 ]
-description = "Installs the cross-platform Betelgeuse theme that styles a plethora of display managers to look sexy"
+description = "Installs the Betelgeuse Linux theme which styles a wide variety of display managers (among other things)"
 documentation = "https://megabyte.space/docs/ansible/roles"
 homepage = "https://megabyte.space"
 include = ["CHANGELOG.md", "LICENSE"]
@@ -63,12 +63,15 @@ keywords = [
   "development",
   "doctor",
   "fedora",
+  "firefox",
+  "gnome",
   "google",
   "ide",
   "install",
   "installdoc",
   "installdoctor",
   "java",
+  "kde",
   "macos",
   "mblabs",
   "megabytelabs",
@@ -79,9 +82,12 @@ keywords = [
   "professormanhattan",
   "role",
   "snap",
+  "sweet",
+  "theme",
   "ubuntu",
   "washingtondc",
-  "windows"
+  "windows",
+  "xfce"
 ]
 license = "MIT"
 name = "ansible-theme"

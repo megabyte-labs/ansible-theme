@@ -2,7 +2,7 @@
   "private": false,
   "name": "@installdoc/ansible-theme",
   "version": "1.1.14",
-  "description": "Installs the cross-platform Betelgeuse theme that styles a plethora of display managers to look sexy",
+  "description": "Installs the Betelgeuse Linux theme which styles a wide variety of display managers (among other things)",
   "license": "MIT",
   "author": "Brian Zalewski <brian@megabyte.space> (https://megabyte.space)",
   "homepage": "https://megabyte.space",
