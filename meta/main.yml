@@ -3,41 +3,40 @@ galaxy_info:
   role_name: theme
   namespace: professormanhattan
   author: ProfessorManhattan
-  description: Installs the Betelgeuse Linux theme which styles a wide variety of
-    display managers (among other things)
+  description: Installs the Betelgeuse Linux theme which styles a wide variety of display managers (among other things)
   company: Megabyte Labs
   issue_tracker_url: https://gitlab.com/megabyte-labs/ansible-roles/theme/-/issues
   license: license (MIT)
-  min_ansible_version: 2.1
+  min_ansible_version: 2.10
   platforms:
-  - name: Debian
-    versions:
-    - buster
-  - name: Ubuntu
-    versions:
-    - focal
+    - name: Debian
+      versions:
+        - buster
+    - name: Ubuntu
+      versions:
+        - focal
   galaxy_tags:
-  - adb
-  - android
-  - androidsdk
-  - androidstudio
-  - ansible
-  - apps
-  - awesome
-  - desktop
-  - development
-  - firefox
-  - gnome
-  - google
-  - ide
-  - java
-  - kde
-  - npm
-  - package
-  - platformtools
-  - snap
-  - sweet
-  - theme
-  - xfce
+    - adb
+    - android
+    - androidsdk
+    - androidstudio
+    - ansible
+    - apps
+    - awesome
+    - desktop
+    - development
+    - firefox
+    - gnome
+    - google
+    - ide
+    - java
+    - kde
+    - npm
+    - package
+    - platformtools
+    - snap
+    - sweet
+    - theme
+    - xfce
 dependencies:
-- role: professormanhattan.dotfiles
+  - role: professormanhattan.dotfiles
